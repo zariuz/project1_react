@@ -3,28 +3,28 @@ import s from './Dialogs.module.css';
 
 const Dialogs = () => {
   return (
-    <div className="dialogs">
-      <div className="dialogs-items">
-        <div className="dialog">
+    <div className={s.dialogs}>
+      <div className={s.dialogsItems}>
+        <div className={s.dialog + ' ' + s.active}>
           Evgeniy
         </div>
-        <div className="dialog">
+        <div className={s.dialog}>
           Jorick
         </div>
-        <div className="dialog">
+        <div className={s.dialog}>
           Olya
         </div>
-        <div className="dialog">
+        <div className={s.dialog}>
           Lena
         </div>
-        <div className="dialog">
+        <div className={s.dialog}>
           Alecksandr
         </div>
       </div>
-      <div className="messages">
-        <div className="message">Hi</div>
-        <div className="message">Hello</div>
-        <div className="message">I'm fine</div>
+      <div className={s.messages}>
+        <div className={s.message}>Hi</div>
+        <div className={s.message}>Hello</div>
+        <div className={s.message}>I'm fine</div>
       </div>
     </div>
   );
