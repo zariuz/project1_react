@@ -1,17 +1,16 @@
-import React from 'react';
-import p from './Post.module.css';
+import React from "react";
+import s from "./Post.module.css";
 
-const Post = (props) => {
-
+const Post = ({ message, likesCount }) => {
   return (
-    <div className={p.item}>
+    <div className={s.item}>
       <img src="https://www.w3schools.com/howto/img_avatar.png" />
-      {props.message}
+      {message}
       <div>
-        <span>like</span> {props.likesCount}
+        <span>like</span> {likesCount}
       </div>
     </div>
   );
-}
+};
 
 export default Post;
