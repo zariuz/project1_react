@@ -8,6 +8,8 @@ const MyPosts = ({ posts }) => {
     return <Post message={message} likesCount={likesCount} />;
   });
 
+  let addPost = () => alert("Hey hey hey!!!");
+
   return (
     <div className={s.postsBlock}>
       <h3>My posts</h3>
@@ -16,7 +18,7 @@ const MyPosts = ({ posts }) => {
           <textarea />
         </div>
         <div>
-          <button>Add post</button>
+          <button onClick={addPost}>Add post</button>
         </div>
       </div>
       <div className={s.posts}>{postsElements}</div>
