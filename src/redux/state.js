@@ -3,7 +3,8 @@ let state = {
     posts: [
       { id: 1, message: "Hi Yo", likesCount: 15 },
       { id: 2, message: "Hello", likesCount: 25 },
-      { id: 3, message: "Welcome", likesCount: 5 }
+      { id: 3, message: "Welcome", likesCount: 5 },
+      { id: 4, message: "Yo people", likesCount: 12 }
     ]
   },
 
@@ -25,6 +26,15 @@ let state = {
   },
 
   sidebar: {}
+};
+
+export let addPost = postMessage => {
+  let newPost = {
+    id: 5,
+    message: postMessage,
+    likesCount: 0
+  };
+  state.profilePage.posts.push(newPost);
 };
 
 export default state;
