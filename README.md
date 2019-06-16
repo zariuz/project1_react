@@ -1,6 +1,6 @@
-## First Project React
+## React and Redux
 
-Training project on React
+Social Network for React and Redux
 
 to install:
 
