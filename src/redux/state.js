@@ -1,3 +1,5 @@
+import profileReducer from "./profile-reducer";
+
 const ADD_POST = "ADD-POST";
 const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
 const UPDATE_NEW_MESSAGE_BODY = "UPDATE_NEW_MESSAGE_BODY";
@@ -49,6 +51,8 @@ let store = {
   },
 
   dispatch(action) {
+    this._state.profilePage = profileReducer(this._state.profilePage, action);
+
     if (action.type === ADD_POST) {
       let newPost = {
         id: 5,
