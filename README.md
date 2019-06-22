@@ -2,7 +2,8 @@
 
 Social Network for React and Redux
 
-to install:
+How to install and build:
 
-1. git clone
-2. npm i
+1. git clone https://github.com/zariuz/project1_react
+2. cd project1_react
+3. npm i
